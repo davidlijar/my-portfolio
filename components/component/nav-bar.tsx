@@ -73,8 +73,9 @@ export function Navbar() {
             <nav className="grid gap-4">
               {menus.map((menu)=>{
                 return(
-                  <SheetClose asChild>
+                  <SheetClose asChild key={menu.name}>
                 <Link
+                
                   className="text-sm font-medium text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
                   href={menu.href}
                 >

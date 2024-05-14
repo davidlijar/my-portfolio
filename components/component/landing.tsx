@@ -19,12 +19,7 @@ To read more about using these font, please visit the Next.js documentation:
 **/
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  SheetTrigger,
-  SheetClose,
-  SheetContent,
-  Sheet,
-} from "@/components/ui/sheet";
+import Image from "next/image";
 import {
   CardTitle,
   CardDescription,
@@ -68,7 +63,7 @@ export function Landing() {
               </Button>
             </div>
             <div className="flex items-center justify-center">
-              <img
+              <Image
                 alt="LI JAR"
                 className="rounded-full"
                 height={400}
