@@ -47,9 +47,9 @@ export function Landing() {
                 About Me
               </h2>
               <p className="text-gray-500 dark:text-gray-400">
-                I'm a software developer with a passion for building innovative
-                solutions. With years of experience in the industry, I've honed
-                my skills in a variety of technologies and frameworks, and I'm
+                I am a software developer with a passion for building innovative
+                solutions. With years of experience in the industry, I have honed
+                my skills in a variety of technologies and frameworks, and I am
                 always eager to learn more.
               </p>
               <p className="text-gray-500 dark:text-gray-400">
@@ -85,7 +85,7 @@ export function Landing() {
                 My Skills
               </h2>
               <p className="text-gray-500 dark:text-gray-400 mt-4">
-                I have a diverse set of skills that I've developed over the
+                I have a diverse set of skills that I have developed over the
                 course of my career. Here are some of the key technologies and
                 frameworks I work with:
               </p>
@@ -136,7 +136,7 @@ export function Landing() {
                 My Projects
               </h2>
               <p className="text-gray-500 dark:text-gray-400 mt-4">
-                Here are some of the projects I've worked on:
+                Here are some of the projects I have worked on:
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -204,7 +204,7 @@ export function Landing() {
                 Get in Touch
               </h2>
               <p className="text-gray-500 dark:text-gray-400 mt-4">
-                I'm always excited to connect with new people and discuss
+                I am always excited to connect with new people and discuss
                 potential collaborations. Feel free to reach out to me using the
                 form below.
               </p>
