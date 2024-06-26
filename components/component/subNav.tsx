@@ -24,10 +24,6 @@ const SubNav: React.FC = () => {
     const handleScroll = () => {
       if (subNavRef.current) {
         const currentScrollY = window.scrollY;
-        const top = subNavRef.current.getBoundingClientRect().top;
-
-        console.log("cu",currentScrollY);
-        console.log("or",originalPosition);
 
         if (currentScrollY > originalPosition - 100) {
           setIsSticky(true);
