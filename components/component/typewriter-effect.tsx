@@ -1,19 +1,21 @@
-'use client'
+"use client";
 
 import Typewriter from "typewriter-effect";
 
-
-
-export default function WriterEffect(){
-
-
-    return(
-        <Typewriter
-          options={{
-            strings: ["Web Developer", "Software Engineer"],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-    )
+interface props{
+    str:string[];
 }
+
+
+export const WriterEffect:React.FC<props>=({str})=> {
+  return (
+    <Typewriter
+      options={{
+        strings: str,
+        autoStart: true,
+        loop: true,
+      }}
+    />
+  );
+}
+

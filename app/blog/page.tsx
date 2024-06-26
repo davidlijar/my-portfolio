@@ -16,16 +16,17 @@ import { XIcon, ExpandIcon } from "lucide-react";
 //icons
 import JavascriptIcon from "@/resource/js.svg";
 import JavaIcon from "@/resource/js.svg";
-import WriterEffect from "@/components/component/typewriter-effect";
+import {WriterEffect} from "@/components/component/typewriter-effect";
 
 export default function Blog() {
+    const messages = ["Hello, World!", "Welcome to Next.js", "Typewriter Effect in Action"];
   return (
     <section
       className="container mt-10  mx-auto px-4 md:px-6 lg:px-8"
       id="projects"
     >
       <div>
-        I am <WriterEffect />
+        I am <WriterEffect str={messages}/>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card>

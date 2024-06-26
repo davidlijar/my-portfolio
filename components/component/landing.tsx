@@ -37,7 +37,7 @@ import { NavigationMenuDemo } from "./navigation-menu";
 import SubNav from "./subNav";
 
 //icons
-import { DatabaseIcon, XIcon } from "../icons/icons";
+import { DatabaseIcon, XIcon, ExpandIcon } from "../icons/icons";
 import NextJsIcon from "@/resource/nextjs.svg";
 import ReactJsIcon from "@/resource/reactjs.svg";
 import TypeScriptIcon from "@/resource/ts.svg";
@@ -50,10 +50,17 @@ import GitHubIcon from "@/resource/github.svg";
 import TailWindCss from "@/resource/tailwind.svg";
 import BootStrapIcon from "@/resource/bootstrap.svg";
 import FlaskIcon from "@/resource/flask.svg";
-
-
+import JSPIcon from "@/resource/jsp.svg";
+import { WriterEffect } from "./typewriter-effect";
 
 export function Landing() {
+  const message1 = [
+    "I am a software developer who loves to solve problems with coding and thinking. Curiosity makes me fall in love with programming and thinking.",
+  ];
+
+  const message2 = [
+    "I believe that I can contribute my skils in coding and computer engineering could makes impacts on chaing of the worlds.",
+  ];
   return (
     <>
       <main className="flex flex-col gap-16 py-12 md:py-16 lg:py-24">
@@ -63,15 +70,13 @@ export function Landing() {
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
                 LI JAR
               </h2>
-              <p className="text-gray-500 dark:text-gray-400">
-                I am a software developer who loves to solve problems with
-                coding and thinking. Curiosity makes me fall in love with
-                programming and thinking.
-              </p>
-              <p className="text-gray-500 dark:text-gray-400">
-                I believe that I can contribute my skils in coding and computer
-                engineering could makes impacts on chaing of the worlds.
-              </p>
+              <div className="text-gray-500 dark:text-gray-400">
+                <WriterEffect str={message1} />
+              </div>
+              <div className="text-gray-500 dark:text-gray-400">
+                <WriterEffect str={message2} />
+              </div>
+
               {/* <Button className="mt-4" variant="outline">
                 Download Resume
               </Button> */}
@@ -137,7 +142,11 @@ export function Landing() {
               <b>FrameWork | Library | Tool:</b>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="flex flex-col items-center gap-2">
+              <div className="flex flex-col items-center gap-2">
+                <JSPIcon className="w-10 h-10" />
+                <span className="text-sm font-medium">JSP</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
                 <FlaskIcon className="w-10 h-10" />
                 <span className="text-sm font-medium">Flask</span>
               </div>
@@ -154,16 +163,16 @@ export function Landing() {
                 <span className="text-sm font-medium">Bootstrap</span>
               </div>
               <div className="flex flex-col items-center gap-2">
+                <TailWindCss className="w-10 h-10" />
+                <span className="text-sm font-medium">Tailwind CSS</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
                 <GitIcon className="w-10 h-10" />
                 <span className="text-sm font-medium">Git</span>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <GitHubIcon className="w-10 h-10" />
                 <span className="text-sm font-medium">GitHub</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <TailWindCss className="w-10 h-10" />
-                <span className="text-sm font-medium">Tailwind CSS</span>
               </div>
             </div>
           </div>
@@ -295,47 +304,3 @@ export function Landing() {
     </>
   );
 }
-
-function ExpandIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8" />
-      <path d="M3 16.2V21m0 0h4.8M3 21l6-6" />
-      <path d="M21 7.8V3m0 0h-4.8M21 3l-6 6" />
-      <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
-    </svg>
-  );
-}
-
-function MountainIcon(
-  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
-) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
-  );
-}
-
