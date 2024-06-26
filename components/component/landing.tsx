@@ -37,7 +37,7 @@ import { NavigationMenuDemo } from "./navigation-menu";
 import SubNav from "./subNav";
 
 //icons
-import { DatabaseIcon } from "../icons/icons";
+import { DatabaseIcon, XIcon } from "../icons/icons";
 import NextJsIcon from "@/resource/nextjs.svg";
 import ReactJsIcon from "@/resource/reactjs.svg";
 import TypeScriptIcon from "@/resource/ts.svg";
@@ -49,6 +49,7 @@ import GitIcon from "@/resource/git.svg";
 import GitHubIcon from "@/resource/github.svg";
 import TailWindCss from "@/resource/tailwind.svg";
 import BootStrapIcon from "@/resource/bootstrap.svg";
+import FlaskIcon from "@/resource/flask.svg";
 
 
 
@@ -102,7 +103,7 @@ export function Landing() {
               <p>I have developed some skills : </p>
             </div>
             <div>
-              <b>Programming Language:</b>
+              <b>Language:</b>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <div className="flex flex-col items-center gap-2">
@@ -136,6 +137,10 @@ export function Landing() {
               <b>FrameWork | Library | Tool:</b>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="flex flex-col items-center gap-2">
+                <FlaskIcon className="w-10 h-10" />
+                <span className="text-sm font-medium">Flask</span>
+              </div>
               <div className="flex flex-col items-center gap-2">
                 <NextJsIcon className="w-10 h-10" />
                 <span className="text-sm font-medium">NextJs</span>
@@ -334,43 +339,3 @@ function MountainIcon(
   );
 }
 
-function WindIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2" />
-      <path d="M9.6 4.6A2 2 0 1 1 11 8H2" />
-      <path d="M12.6 19.4A2 2 0 1 0 14 16H2" />
-    </svg>
-  );
-}
-
-function XIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
-  );
-}
