@@ -34,6 +34,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { JSX, SVGProps } from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "../ui/avatar";
 import { NavigationMenuDemo } from "./navigation-menu";
+import SubNav from "./subNav";
 
 export function Landing() {
   return (
@@ -72,9 +73,10 @@ export function Landing() {
               />
             </div>
           </div>
-          <div className="pt-10 flex justify-center">
-            <NavigationMenuDemo />
-          </div>
+          
+        </section>
+        <section>
+          <SubNav/>
         </section>
         <section className="container mx-auto px-4 md:px-6 lg:px-8" id="skills">
           <div className="grid gap-8">
@@ -120,6 +122,7 @@ export function Landing() {
             </div>
           </div>
         </section>
+        
         <section
           className="container mx-auto px-4 md:px-6 lg:px-8"
           id="projects"
