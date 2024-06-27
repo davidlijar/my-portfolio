@@ -17,7 +17,7 @@ import { XIcon, MenuIcon } from "lucide-react";
 export function Navbar() {
   const menus = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/test" },
+    { name: "About", href: "/about" },
     { name: "Portfolio", href: "#" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "#" },

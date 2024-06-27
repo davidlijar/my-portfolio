@@ -3,24 +3,43 @@ import React from "react";
 const Timeline = () => {
   const events = [
     {
-      title: "Started University",
-      time: "2017",
-      description: "Mandalay University of Technology",
+      title: "Primary - High School",
+      time: "2006-2016",
+      description: "No.6 Basic Education High School,KengTung, Myanmar",
     },
     {
-      title: "Graduated",
-      time: "2020",
-      description: "Completed degree in Computer Science.",
+      title: "Graduated High School",
+      time: "2016 March",
+      description:
+        "Passed The Matriculation Exam with 6 distinctions. Marks:497/600",
+    },
+    {
+      title: "Participant",
+      time: "2016 August",
+      description:
+        "4th China Asean Youth Cultural Exchange Festival held in Xi'an",
+    },
+    {
+      title: "Started University",
+      time: "2017",
+      description:
+        "Mandalay University of Technology. Major : Electrical Power Engineering",
+    },
+    {
+      title: "Start Up",
+      time: "2021",
+      description:
+        "Started a small food ordering and delivery start up business with three other friends. Role : Web Developer | Manager",
     },
     {
       title: "Started College",
-      time: "2023",
-      description: "Vision College of Jeonju",
+      time: "2023~",
+      description: "Vision College of Jeonju. Dept : Department of International Coorperation and Technology. Major : Computer Engineering",
     },
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-4xl mx-auto bg-white rounded-lg">
       <div className="relative">
         <div className="border-r-2 border-gray-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
         {events.map((event, index) => (

@@ -32,10 +32,11 @@ import TailWindCss from "@/resource/tailwind.svg";
 import BootStrapIcon from "@/resource/bootstrap.svg";
 import FlaskIcon from "@/resource/flask.svg";
 import JSPIcon from "@/resource/jsp.svg";
+import LanguageIcon from "@/resource/lang.svg"
 import { WriterEffect } from "./typewriter-effect";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Timeline from "./background-life";
+
+import AboutPage from "@/app/about/page";
 
 export function Landing() {
   const message1 = [
@@ -119,6 +120,22 @@ export function Landing() {
               <div className="flex flex-col items-center gap-2">
                 <DatabaseIcon className="w-10 h-10" />
                 <span className="text-sm font-medium">PostgreSQL\MySQL</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <LanguageIcon className="w-10 h-10" />
+                <span className="text-sm font-medium">English</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <LanguageIcon className="w-10 h-10" />
+                <span className="text-sm font-medium">Korean</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <LanguageIcon className="w-10 h-10" />
+                <span className="text-sm font-medium">Burmese</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <LanguageIcon className="w-10 h-10" />
+                <span className="text-sm font-medium">Akha</span>
               </div>
             </div>
 
@@ -233,104 +250,9 @@ export function Landing() {
           </div>
         </section>
 
-        <section
-          className="container mx-auto px-4 md:px-6 lg:px-8"
-          id="about-me "
-        >
-          <div className="grid gap-4 place-items-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              About Me
-            </h2>
-            <p className="text-gray-500 dark:text-gray-400 mt-4">
-              I am always excited to connect with new people and discuss
-              potential collaborations. Feel free to reach out to me using the
-              form below.
-            </p>
-            <div>
-              <Tabs
-                defaultValue="myinfo"
-                className="w-[370px] lg:w-[800px]  grid place-items-center"
-              >
-                <TabsList>
-                  <TabsTrigger value="myinfo">Profile</TabsTrigger>
-                  <TabsTrigger value="password">Background</TabsTrigger>
-                </TabsList>
-                <div className="rounded-md border border-black-500 p-5 mt-4 w-[100%]">
-                  <TabsContent
-                    value="myinfo"
-                    className="mt-5 flex flex-col items-center gap-3"
-                  >
-                    <div className="flex items-center justify-center">
-                      <Image
-                        alt="LI JAR"
-                        className="rounded-full"
-                        height={100}
-                        src="/lijar.jpg"
-                        style={{
-                          aspectRatio: "400/400",
-                          objectFit: "cover",
-                        }}
-                        width={100}
-                      />
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>Name</label>
-                      <span className="font-bold">LI JAR</span>
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>Age</label>
-                      <span className="font-bold">24</span>
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>Nationality</label>
-                      <span className="font-bold">Myanmar</span>
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>Occupation</label>
-                      <span className="font-bold">Student</span>
-                    </div>
-                    <div className="flex justify-between w-[100%] gap-5">
-                      <label>University/College</label>
-                      <span className="font-bold">
-                        Mandalay University of Technology (2017-2020)
-                        <br /> Vision College of Jeonju (2023~)
-                      </span>
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>Phone</label>
-                      <span className="font-bold">010-2178-4121</span>
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>Email</label>
-                      <span className="font-bold">davidbeljar@gmail.com</span>
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>Website</label>
-                      <Link href={"https://lijar.vercel.app/"}>
-                        <span className="font-bold underline underline-offset-1">lijar.vercel.app</span>
-                      </Link>
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>Youtube</label>
-                      <Link href={"https://www.youtube.com/@navico7"}>
-                        <span className="font-bold underline underline-offset-1">@navico7</span>
-                      </Link>
-                    </div>
-                    <div className="flex justify-between w-[100%]">
-                      <label>GitHub</label>
-                      <Link href={"https://github.com/davidlijar"}>
-                        <span className="font-bold underline underline-offset-1">github.com/davidlijar</span>
-                      </Link>
-                    </div>
-                  </TabsContent>
-                  <TabsContent value="password" className="mt-5">
-                    <Timeline/>
-                  </TabsContent>
-                </div>
-              </Tabs>
-            </div>
-          </div>
-        </section>
+       <section className="mt-[-50px]">
+        <AboutPage/>
+       </section>
 
         <section
           className="container mx-auto px-4 md:px-6 lg:px-8"
