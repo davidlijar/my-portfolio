@@ -30,7 +30,7 @@ export function Navbar() {
           <AvatarImage src="/lijar.jpg" />
           <AvatarFallback>LJ</AvatarFallback>
         </Avatar>
-        <span className="font-semibold">LI JAR</span>
+        <span className="font-semibold">LI JAR | Portfolio</span>
       </Link>
       <nav className="hidden items-center gap-4 md:flex">
         {menus.map((menu)=>{

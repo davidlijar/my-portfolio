@@ -35,6 +35,7 @@ import JSPIcon from "@/resource/jsp.svg";
 import { WriterEffect } from "./typewriter-effect";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Timeline from "./background-life";
 
 export function Landing() {
   const message1 = [
@@ -306,24 +307,24 @@ export function Landing() {
                     <div className="flex justify-between w-[100%]">
                       <label>Website</label>
                       <Link href={"https://lijar.vercel.app/"}>
-                        <span className="font-bold">lijar.vercel.app</span>
+                        <span className="font-bold underline underline-offset-1">lijar.vercel.app</span>
                       </Link>
                     </div>
                     <div className="flex justify-between w-[100%]">
                       <label>Youtube</label>
                       <Link href={"https://www.youtube.com/@navico7"}>
-                        <span className="font-bold">@navico7</span>
+                        <span className="font-bold underline underline-offset-1">@navico7</span>
                       </Link>
                     </div>
                     <div className="flex justify-between w-[100%]">
                       <label>GitHub</label>
                       <Link href={"https://github.com/davidlijar"}>
-                        <span className="font-bold">github.com/davidlijar</span>
+                        <span className="font-bold underline underline-offset-1">github.com/davidlijar</span>
                       </Link>
                     </div>
                   </TabsContent>
                   <TabsContent value="password" className="mt-5">
-                    Change your password here.
+                    <Timeline/>
                   </TabsContent>
                 </div>
               </Tabs>
@@ -381,7 +382,7 @@ export function Landing() {
               <AvatarImage src="/lijar.jpg" />
               <AvatarFallback>LJ</AvatarFallback>
             </Avatar>
-            <span className="font-semibold">LI JAR</span>
+            <span className="font-semibold">LI JAR | Portfolio</span>
           </div>
           <p>© 2024 LI JAR. All rights reserved.</p>
         </div>
