@@ -252,7 +252,7 @@ export function Landing() {
               >
                 <TabsList>
                   <TabsTrigger value="myinfo">Profile</TabsTrigger>
-                  <TabsTrigger value="password">Life</TabsTrigger>
+                  <TabsTrigger value="password">Background</TabsTrigger>
                 </TabsList>
                 <div className="rounded-md border border-black-500 p-5 mt-4 w-[100%]">
                   <TabsContent
@@ -313,6 +313,12 @@ export function Landing() {
                       <label>Youtube</label>
                       <Link href={"https://www.youtube.com/@navico7"}>
                         <span className="font-bold">@navico7</span>
+                      </Link>
+                    </div>
+                    <div className="flex justify-between w-[100%]">
+                      <label>GitHub</label>
+                      <Link href={"https://github.com/davidlijar"}>
+                        <span className="font-bold">github.com/davidlijar</span>
                       </Link>
                     </div>
                   </TabsContent>
