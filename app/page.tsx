@@ -1,19 +1,10 @@
-import { Landing } from "@/components/component/landing";
-import { Button } from "@/components/ui/button";
-import {
-  Carousel,
-  CarouselApi,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Image from "next/image";
+import {LandingPage } from "@/components/component/langing-page";
+
 
 export default function Home() {
   return (
     <>
-      <Landing/>
+      <LandingPage/>
     </>
   );
 }

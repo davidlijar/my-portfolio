@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import  {Navbar}  from "@/components/component/nav-bar";
+import Footer from "@/components/component/footer";
 
 const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <div><Navbar/></div>
         <div className="py-10">{children}</div>
+        <div><Footer/></div>
       </body>
     </html>
   );

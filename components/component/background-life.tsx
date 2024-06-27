@@ -36,6 +36,11 @@ const Timeline = () => {
       time: "2023~",
       description: "Vision College of Jeonju. Dept : Department of International Coorperation and Technology. Major : Computer Engineering",
     },
+    {
+      title: "Teaching & Sharing",
+      time: "2023~",
+      description: "Teaching programming language mainly C and Html,Css to junior students, sharing knowledge information and leading in doing projects with them",
+    },
   ];
 
   return (
