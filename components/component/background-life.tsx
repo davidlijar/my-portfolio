@@ -43,11 +43,29 @@ const Timeline = () => {
     },
   ];
 
+  const events2 = [
+    {
+      title: "Started University",
+      time: "2017",
+      description: "Mandalay University of Technology"
+    },
+    {
+      title: "Graduated",
+      time: "2020",
+      description: "Completed degree in Computer Science."
+    },
+    {
+      title: "Started College",
+      time: "2023",
+      description: "Vision College of Jeonju"
+    }
+  ];
+
   return (
     <div className="max-w-4xl mx-auto bg-white">
       <div className="relative">
         <div className="border-r-2 border-gray-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
-        {events.map((event, index) => (
+        {events2.map((event, index) => (
           <div key={index} className={`mb-8 flex justify-${index % 2 === 0 ? 'start' : 'end'} items-center w-full`}>
             <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
               <div className="p-4 bg-gray-100 rounded-lg shadow-md">
