@@ -25,7 +25,7 @@ export function NavigationMenuDemo() {
       <NavigationMenuList>
         {menus.map((menu)=>(
           
-        <NavigationMenuItem>
+        <NavigationMenuItem key={menu.name}>
           <Link href={menu.href} legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               {menu.name}

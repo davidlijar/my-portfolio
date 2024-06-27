@@ -9,11 +9,12 @@ import TailWindCss from "@/resource/tailwind.svg";
 import BootStrapIcon from "@/resource/bootstrap.svg";
 import FlaskIcon from "@/resource/flask.svg";
 import JSPIcon from "@/resource/jsp.svg";
-import LanguageIcon from "@/resource/lang.svg"
+import LanguageIcon from "@/resource/lang.svg";
 import JavascriptIcon from "@/resource/js.svg";
 
 import JavaIcon from "@/resource/java.svg";
 import PythonIcon from "@/resource/python.svg";
+import TkinterIcon from "@/resource/tkinter.svg"
 import Link from "next/link";
 
 const MySkills = () => {
@@ -96,6 +97,10 @@ const MySkills = () => {
           <div className="flex flex-col items-center gap-2">
             <ReactJsIcon className="w-10 h-10" />
             <span className="text-sm font-medium">ReactJs</span>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <TkinterIcon className="w-10 h-10" />
+            <span className="text-sm font-medium">Tkinter</span>
           </div>
           <div className="flex flex-col items-center gap-2">
             <BootStrapIcon className="w-10 h-10" />

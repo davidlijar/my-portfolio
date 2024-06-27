@@ -5,6 +5,9 @@ import JavascriptIcon from "@/resource/js.svg";
 
 import JavaIcon from "@/resource/java.svg";
 import PythonIcon from "@/resource/python.svg";
+import FlaskIcon from "@/resource/flask.svg";
+import TkinterIcon from "@/resource/tkinter.svg";
+import JSPIcon from "@/resource/jsp.svg";
 
 import {
     CardTitle,
@@ -32,15 +35,17 @@ const MyProjects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card>
             <CardHeader>
-              <CardTitle>Project 1</CardTitle>
+              <CardTitle>Smart Farm</CardTitle>
               <CardDescription>
-                A web application built with React and Next.js.
+                Smart Fram project
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
-                <JavascriptIcon className="w-6 h-6" />
-                <JavaIcon className="w-6 h-6" />
+                <PythonIcon className="w-6 h-6" />
+                <FlaskIcon className="w-6 h-6" />
+                <TkinterIcon className="w-6 h-6" />
+                
               </div>
             </CardContent>
             <CardFooter>
@@ -49,15 +54,15 @@ const MyProjects = () => {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Project 2</CardTitle>
+              <CardTitle>NAMA Real Estate Website</CardTitle>
               <CardDescription>
-                A RESTful API built with Node.js and Express.
+                Real Estate Website with Java, JSP
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
-                <PythonIcon className="w-6 h-6" />
-                <XIcon className="w-6 h-6" />
+                <JavaIcon className="w-6 h-6" />
+                <JSPIcon className="w-6 h-6" />
               </div>
             </CardContent>
             <CardFooter>
