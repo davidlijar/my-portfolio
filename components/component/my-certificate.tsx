@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import Image from 'next/image'
+import { AspectRatio } from '@radix-ui/react-aspect-ratio'
 import {
   CardTitle,
   CardDescription,
@@ -7,9 +7,9 @@ import {
   CardContent,
   CardFooter,
   Card,
-} from "@/components/ui/card";
-import { Button } from "../ui/button";
-import Link from "next/link";
+} from '@/components/ui/card'
+import { Button } from '../ui/button'
+import Link from 'next/link'
 
 const MyCertificates = () => {
   return (
@@ -38,18 +38,18 @@ const MyCertificates = () => {
               </CardDescription>
               <Link
                 href={
-                  "https://www.freecodecamp.org/certification/lijar/javascript-algorithms-and-data-structures"
+                  'https://www.freecodecamp.org/certification/lijar/javascript-algorithms-and-data-structures'
                 }
               >
                 <span className="text-sm pl-5 w-full underline">verify</span>
               </Link>
               <a
-                  href="/javascript_DSA.png"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-sm pl-5 w-full underline">view</span>
-                </a>
+                href="/javascript_DSA.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-sm pl-5 w-full underline">view</span>
+              </a>
             </div>
           </div>
           <div className="mx-5">
@@ -65,18 +65,14 @@ const MyCertificates = () => {
 
               <Link
                 href={
-                  "https://www.freecodecamp.org/certification/lijar/responsive-web-design"
+                  'https://www.freecodecamp.org/certification/lijar/responsive-web-design'
                 }
               >
                 <span className="text-sm pl-5 w-full underline">verify</span>
               </Link>
-              <a
-                  href="/RWD.png"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-sm pl-5 w-full underline">view</span>
-                </a>
+              <a href="/RWD.png" target="_blank" rel="noopener noreferrer">
+                <span className="text-sm pl-5 w-full underline">view</span>
+              </a>
             </div>
           </div>
           <div className="mx-5">
@@ -91,21 +87,33 @@ const MyCertificates = () => {
               <CardDescription>
                 Microsoft Excel Expert (Office 2016)
               </CardDescription>
-             
-                <a
-                  href="/excel.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-sm pl-5 w-full underline">view</span>
-                </a>
-            
+
+              <a href="/excel.jpg" target="_blank" rel="noopener noreferrer">
+                <span className="text-sm pl-5 w-full underline">view</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="mx-5">
+            <Image
+              src="/topik.png"
+              alt="certificate"
+              width={350}
+              height={300}
+              className="mb-3"
+            />
+            <div className="flex items-center justify-between w-[350px]">
+              <CardDescription>TOPIK</CardDescription>
+
+              <a href="/excel.jpg" target="_blank" rel="noopener noreferrer">
+                <span className="text-sm pl-5 w-full underline">view</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default MyCertificates;
+export default MyCertificates

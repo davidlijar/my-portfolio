@@ -1,7 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
-
-
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Profile = () => {
   return (
@@ -11,10 +9,10 @@ const Profile = () => {
           alt="LI JAR"
           className="rounded-full"
           height={100}
-          src="/lijar.jpg"
+          src="/lijar_profile.jpg"
           style={{
-            aspectRatio: "400/400",
-            objectFit: "cover",
+            aspectRatio: '400/400',
+            objectFit: 'cover',
           }}
           width={100}
         />
@@ -56,7 +54,7 @@ const Profile = () => {
       </div>
       <div className="flex justify-between w-[100%]">
         <label>Website</label>
-        <Link href={"https://lijar.vercel.app/"}>
+        <Link href={'https://lijar.vercel.app/'}>
           <span className="font-bold underline underline-offset-1">
             lijar.vercel.app
           </span>
@@ -64,7 +62,7 @@ const Profile = () => {
       </div>
       <div className="flex justify-between w-[100%]">
         <label>Youtube</label>
-        <Link href={"https://www.youtube.com/@navico7"}>
+        <Link href={'https://www.youtube.com/@navico7'}>
           <span className="font-bold underline underline-offset-1">
             @navico7
           </span>
@@ -72,14 +70,14 @@ const Profile = () => {
       </div>
       <div className="flex justify-between w-[100%]">
         <label>GitHub</label>
-        <Link href={"https://github.com/davidlijar"}>
+        <Link href={'https://github.com/davidlijar'}>
           <span className="font-bold underline underline-offset-1">
             github.com/davidlijar
           </span>
         </Link>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile
