@@ -20,9 +20,7 @@ const MainIntro = () => {
           <div className="text-gray-500 dark:text-gray-400">
             <WriterEffect str={message1} />
           </div>
-          <div className="text-gray-500 dark:text-gray-400">
-            <WriterEffect str={message2} />
-          </div>
+          
 
           {/* <Button className="mt-4" variant="outline">
                 Download Resume

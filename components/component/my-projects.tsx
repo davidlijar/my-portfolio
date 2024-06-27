@@ -8,17 +8,20 @@ import PythonIcon from "@/resource/python.svg";
 import FlaskIcon from "@/resource/flask.svg";
 import TkinterIcon from "@/resource/tkinter.svg";
 import JSPIcon from "@/resource/jsp.svg";
+import ReactJsIcon from "@/resource/reactjs.svg";
+import NextJsIcon from "@/resource/nextjs.svg";
+import TailwindCssIcon from "@/resource/tailwind.svg";
+import { DatabaseIcon } from "../icons/icons";
 
 import {
-    CardTitle,
-    CardDescription,
-    CardHeader,
-    CardContent,
-    CardFooter,
-    Card,
-  } from "@/components/ui/card";
+  CardTitle,
+  CardDescription,
+  CardHeader,
+  CardContent,
+  CardFooter,
+  Card,
+} from "@/components/ui/card";
 import { Button } from "../ui/button";
-
 
 const MyProjects = () => {
   return (
@@ -36,16 +39,13 @@ const MyProjects = () => {
           <Card>
             <CardHeader>
               <CardTitle>Smart Farm</CardTitle>
-              <CardDescription>
-                Smart Fram project
-              </CardDescription>
+              <CardDescription>Smart Fram project</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
                 <PythonIcon className="w-6 h-6" />
                 <FlaskIcon className="w-6 h-6" />
                 <TkinterIcon className="w-6 h-6" />
-                
               </div>
             </CardContent>
             <CardFooter>
@@ -54,15 +54,16 @@ const MyProjects = () => {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>NAMA Real Estate Website</CardTitle>
+              <CardTitle>NAMA Real Estate</CardTitle>
               <CardDescription>
-                Real Estate Website with Java, JSP
+                Real Estate Website developed with Java, JSP
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
                 <JavaIcon className="w-6 h-6" />
                 <JSPIcon className="w-6 h-6" />
+                <DatabaseIcon className="w-6 h-6" />MySQL
               </div>
             </CardContent>
             <CardFooter>
@@ -71,15 +72,65 @@ const MyProjects = () => {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Project 3</CardTitle>
+              <CardTitle>MiNaw AI</CardTitle>
+              <CardDescription>AI ChatBot developed using Gemini API, LangChain and Azure speech recognition</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex items-center gap-2">
+                <p>GeminiAPI</p>
+                <p>LangChain</p>
+                <p>Azure</p>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button variant="outline">View Project</Button>
+            </CardFooter>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Metagrow</CardTitle>
+              <CardDescription>VR Shopping Mall</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex items-center gap-2">
+                <p>Unity</p>
+                <p>C#</p>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button variant="outline">View Project</Button>
+            </CardFooter>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>NAMA E-commerce</CardTitle>
               <CardDescription>
-                A mobile app built with React Native and Expo.
+                Food ordering and delivery Website
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
-                <JavascriptIcon className="w-6 h-6" />
-                <ExpandIcon className="w-6 h-6" />
+              <ReactJsIcon className="w-6 h-6" />
+              <DatabaseIcon className="w-6 h-6" />Firebase
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button variant="outline">View Project</Button>
+            </CardFooter>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>LI JAR | Portfolio<span className="text-sm">(this)</span></CardTitle>
+              <CardDescription>
+                Personal Portfolio website
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex items-center gap-2">
+              <NextJsIcon className="w-6 h-6" />
+              <ReactJsIcon className="w-6 h-6" />
+              <TailwindCssIcon className="w-6 h-6" />
+              <DatabaseIcon className="w-6 h-6" />PostgreSQL
               </div>
             </CardContent>
             <CardFooter>
@@ -91,6 +142,5 @@ const MyProjects = () => {
     </section>
   );
 };
-
 
 export default MyProjects;
