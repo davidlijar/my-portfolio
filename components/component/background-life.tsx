@@ -43,36 +43,17 @@ const Timeline = () => {
     },
   ];
 
-  const events2 = [
-    {
-      title: "Started University",
-      time: "2017",
-      description: "Mandalay University of Technology"
-    },
-    {
-      title: "Graduated",
-      time: "2020",
-      description: "Completed degree in Computer Science."
-    },
-    {
-      title: "Started College",
-      time: "2023",
-      description: "Vision College of Jeonju"
-    }
-  ];
 
   return (
-    <div className="max-w-4xl mx-auto bg-white">
-      <div className="relative">
-        <div className="border-r-2 border-gray-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
-        {events2.map((event, index) => (
-          <div key={index} className={`mb-8 flex justify-${index % 2 === 0 ? 'start' : 'end'} items-center w-full`}>
-            <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-              <div className="p-4 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="font-bold mb-2">{event.title}</h3>
-                <p className="text-sm text-gray-600">{event.time}</p>
-                <p>{event.description}</p>
-              </div>
+    <div className="max-w-4xl mx-auto p-6">
+      <div className="relative border-l-2 border-gray-300 pl-8">
+        {events.map((event, index) => (
+          <div key={index} className="mb-8">
+            <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-2.5"></div>
+            <div className="ml-8">
+              <h3 className="font-bold mb-1">{event.title}</h3>
+              <p className="text-sm text-gray-600 mb-2">{event.time}</p>
+              <p>{event.description}</p>
             </div>
           </div>
         ))}
