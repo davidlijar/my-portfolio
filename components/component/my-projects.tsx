@@ -1,17 +1,17 @@
 //icons
-import { XIcon, ExpandIcon } from "../icons/icons";
+import { XIcon, ExpandIcon } from '../icons/icons'
 
-import JavascriptIcon from "@/resource/js.svg";
+import JavascriptIcon from '@/resource/js.svg'
 
-import JavaIcon from "@/resource/java.svg";
-import PythonIcon from "@/resource/python.svg";
-import FlaskIcon from "@/resource/flask.svg";
-import TkinterIcon from "@/resource/tkinter.svg";
-import JSPIcon from "@/resource/jsp.svg";
-import ReactJsIcon from "@/resource/reactjs.svg";
-import NextJsIcon from "@/resource/nextjs.svg";
-import TailwindCssIcon from "@/resource/tailwind.svg";
-import { DatabaseIcon } from "../icons/icons";
+import JavaIcon from '@/resource/java.svg'
+import PythonIcon from '@/resource/python.svg'
+import FlaskIcon from '@/resource/flask.svg'
+import TkinterIcon from '@/resource/tkinter.svg'
+import JSPIcon from '@/resource/jsp.svg'
+import ReactJsIcon from '@/resource/reactjs.svg'
+import NextJsIcon from '@/resource/nextjs.svg'
+import TailwindCssIcon from '@/resource/tailwind.svg'
+import { DatabaseIcon } from '../icons/icons'
 
 import {
   CardTitle,
@@ -20,10 +20,10 @@ import {
   CardContent,
   CardFooter,
   Card,
-} from "@/components/ui/card";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import ProjectCard from "./view-project";
+} from '@/components/ui/card'
+import { Button } from '../ui/button'
+import Link from 'next/link'
+import ProjectCard from './view-project'
 
 const MyProjects = () => {
   return (
@@ -33,12 +33,11 @@ const MyProjects = () => {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Projects
           </h2>
-         
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card>
             <CardHeader>
-              <CardTitle>Smart Farm</CardTitle>
+              <CardTitle>Anygrow3</CardTitle>
               <CardDescription>Smart Fram project</CardDescription>
             </CardHeader>
             <CardContent>
@@ -70,8 +69,8 @@ const MyProjects = () => {
               </div>
             </CardContent>
             <CardFooter>
-            <Link href={`/project/2`}>
-              <Button variant="outline">View Project</Button>
+              <Link href={`/project/2`}>
+                <Button variant="outline">View Project</Button>
               </Link>
             </CardFooter>
           </Card>
@@ -91,7 +90,9 @@ const MyProjects = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="outline">View Project</Button>
+              <Link href={`/project/3`}>
+                <Button variant="outline">View Project</Button>
+              </Link>
             </CardFooter>
           </Card>
           <Card>
@@ -106,7 +107,9 @@ const MyProjects = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="outline">View Project</Button>
+              <Link href={`/project/4`}>
+                <Button variant="outline">View Project</Button>
+              </Link>
             </CardFooter>
           </Card>
           <Card>
@@ -124,7 +127,9 @@ const MyProjects = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="outline">View Project</Button>
+              <Link href={`/project/5`}>
+                <Button variant="outline">View Project</Button>
+              </Link>
             </CardFooter>
           </Card>
           <Card>
@@ -144,13 +149,15 @@ const MyProjects = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="outline">View Project</Button>
+              <Link href={`/project/6`}>
+                <Button variant="outline">View Project</Button>
+              </Link>
             </CardFooter>
           </Card>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default MyProjects;
+export default MyProjects

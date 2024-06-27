@@ -6,32 +6,23 @@ export default function Page({ params }: { params: { id: string } }) {
 
   const projects = [
     {
-      name: 'My Awesome Project',
-      tools: 'React, Tailwind CSS, Node.js',
+      name: 'Anygrow3',
+      tools: 'Python, Flask, Websocket',
       description:
-        'This is a brief description of my awesome project. It does many wonderful things using cutting-edge technology.',
-      github: 'https://github.com/username/repository',
-      youtube: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        'I re-programed the whole project, orignally programmed in Nodejs, with Python. ',
+      github: 'https://github.com/davidlijar/anygrow3.git',
+      youtube: 'https://www.youtube.com/embed/CgxNuzuAr1Q',
+
       content: (
         <>
+          <h2 className=" text-lg font-bold mt-5">구현 세부 사항</h2>
           <p>
-            React components are the building blocks of any React application.
-            They allow you to split the UI into independent, reusable pieces,
-            and think about each piece in isolation.
-          </p>
-          <p>
-            This page provides an introduction to the idea of components. You
-            can find a detailed component API reference here.
-          </p>
-          <p>
-            Conceptually, components are like JavaScript functions. They accept
-            arbitrary inputs (called “props”) and return React elements
-            describing what should appear on the screen.
-          </p>
-          <p className="font-bold">
-            Mandalay University of Technology (2017-2020)
-            <br />
-            Vision College of Jeonju (2023~)
+            Python is used to communicate with the hardware chip device(Serial
+            Communication), sending signal to request sensor data, receive and
+            do calculation. And then, Tkinter is used to establish control all
+            the functions such as connecting, streaming data. Flask is used to
+            host front-end web page and websocket is used to communicate between
+            back-end server and front-end client.
           </p>
         </>
       ),
@@ -63,6 +54,81 @@ export default function Page({ params }: { params: { id: string } }) {
             설명하는 데이터베이스 스키마 파일을 위한 별도 폴더로 구성됩니다.
             JDBC는 데이터베이스에 연결하고 이 데이터에 대한 CRUD 작업(Create,
             Read, Update, Delete)을 수행하는 데 사용되었습니다.
+          </p>
+        </>
+      ),
+    },
+    {
+      name: 'MiNaw AI',
+      tools:
+        'Python, GeminiAPI, LangChain, Azure Speech Recognition, Flask server',
+      description:
+        'I intially started this project to explore AI world with LLM models.I intended to build a RAG application which can interact with own dataset. So this process is stillongoing...',
+      github: 'https://github.com/davidlijar/speech-to-text-azure.git',
+      youtube: 'https://www.youtube.com/embed/knJOzX9djJk',
+      content: (
+        <>
+          <h2 className=" text-lg font-bold mt-5">시스템 설계 및 아키텍처</h2>
+          <p>
+            Mainly programmed with Python. Azure for Speech recognitioin and
+            Gemini API for LLM. Flask server for web hosting.
+          </p>
+          <h2 className=" text-lg font-bold mt-5">구현 세부 사항</h2>
+          <p>
+            Speech Recognize and speech-to-text and process with Gemini API.
+            text-to-speech result of LLM.
+          </p>
+        </>
+      ),
+    },
+    {
+      name: 'Metagrow',
+      tools: 'Unity, C#, Ready Player Me SDK, Meta Quest 2',
+      description:
+        'This project is a team project and a project from the class of "Capstone Project" So this process is stillongoing...',
+      github: 'https://github.com/davidlijar',
+      youtube: 'https://www.youtube.com/embed/LCmQX_PsNso',
+      content: (
+        <>
+          <h2 className=" text-lg font-bold mt-5">시스템 설계 및 아키텍처</h2>
+          <p>
+            The project is to build a VR shopping mall for clothes where
+            customer can explore and purchase clothes virtually. Ready Player Me
+            SDK is used to build 3D Avator Creator. For hardware, Meta Quest 2
+            is used as UI to experience the VR world.
+          </p>
+        </>
+      ),
+    },
+    {
+      name: 'NAMA E-commerce',
+      tools: 'Reactjs, Firebase',
+      description: 'Food Ordering and Delivery website.',
+      github: 'https://github.com/NAMA-4/nama-ecommerce.git',
+      youtube: 'https://www.youtube.com/embed/xHTkvlO1Vo8',
+      content: (
+        <>
+          <h2 className=" text-lg font-bold mt-5">시스템 설계 및 아키텍처</h2>
+          <p>
+            Simply developed using Reactjs for front-end and back-end. Firebase
+            is used for storing shop infomation and food and product
+            information.
+          </p>
+        </>
+      ),
+    },
+    {
+      name: 'LI JAR | Portfolio',
+      tools: 'Nextjs, TailwindCss, PostgreSQL',
+      description: 'Personal Portfolio Webpage.',
+      github: 'https://github.com/davidlijar/my-portfolio.git',
+      youtube: 'https://www.youtube.com/embed/JobVrZYMTJA',
+      content: (
+        <>
+          <h2 className=" text-lg font-bold mt-5">시스템 설계 및 아키텍처</h2>
+          <p>
+            Developed mainly using NextJs, TailwindCss and PostgreSQL. Vercel
+            for hosting.
           </p>
         </>
       ),
