@@ -110,6 +110,23 @@ const MyCertificates = () => {
               </a>
             </div>
           </div>
+
+          <div className="mx-5">
+            <Image
+              src="/grade.jpg"
+              alt="certificate"
+              width={350}
+              height={300}
+              className="mb-3"
+            />
+            <div className="flex items-center justify-between w-[350px]">
+              <CardDescription>Transcript</CardDescription>
+
+              <a href="/grade.jpg" target="_blank" rel="noopener noreferrer">
+                <span className="text-sm pl-5 w-full underline">view</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
