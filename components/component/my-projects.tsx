@@ -31,11 +31,9 @@ const MyProjects = () => {
       <div className="grid gap-8">
         <div className="grid gap-4 place-items-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            My Projects
+            Projects
           </h2>
-          <p className="text-gray-500 dark:text-gray-400 mt-4">
-            Here are some of the projects I have worked on:
-          </p>
+         
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card>
