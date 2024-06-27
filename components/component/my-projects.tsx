@@ -22,6 +22,8 @@ import {
   Card,
 } from "@/components/ui/card";
 import { Button } from "../ui/button";
+import Link from "next/link";
+import ProjectCard from "./view-project";
 
 const MyProjects = () => {
   return (
@@ -49,7 +51,9 @@ const MyProjects = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="outline">View Project</Button>
+              <Link href={`/project/1`}>
+                <Button variant="outline">View Project</Button>
+              </Link>
             </CardFooter>
           </Card>
           <Card>
@@ -63,17 +67,23 @@ const MyProjects = () => {
               <div className="flex items-center gap-2">
                 <JavaIcon className="w-6 h-6" />
                 <JSPIcon className="w-6 h-6" />
-                <DatabaseIcon className="w-6 h-6" />MySQL
+                <DatabaseIcon className="w-6 h-6" />
+                MySQL
               </div>
             </CardContent>
             <CardFooter>
+            <Link href={`/project/2`}>
               <Button variant="outline">View Project</Button>
+              </Link>
             </CardFooter>
           </Card>
           <Card>
             <CardHeader>
               <CardTitle>MiNaw AI</CardTitle>
-              <CardDescription>AI ChatBot developed using Gemini API, LangChain and Azure speech recognition</CardDescription>
+              <CardDescription>
+                AI ChatBot developed using Gemini API, LangChain and Azure
+                speech recognition
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
@@ -110,8 +120,9 @@ const MyProjects = () => {
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
-              <ReactJsIcon className="w-6 h-6" />
-              <DatabaseIcon className="w-6 h-6" />Firebase
+                <ReactJsIcon className="w-6 h-6" />
+                <DatabaseIcon className="w-6 h-6" />
+                Firebase
               </div>
             </CardContent>
             <CardFooter>
@@ -120,17 +131,18 @@ const MyProjects = () => {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>LI JAR | Portfolio<span className="text-sm">(this)</span></CardTitle>
-              <CardDescription>
-                Personal Portfolio website
-              </CardDescription>
+              <CardTitle>
+                LI JAR | Portfolio<span className="text-sm">(this)</span>
+              </CardTitle>
+              <CardDescription>Personal Portfolio website</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
-              <NextJsIcon className="w-6 h-6" />
-              <ReactJsIcon className="w-6 h-6" />
-              <TailwindCssIcon className="w-6 h-6" />
-              <DatabaseIcon className="w-6 h-6" />PostgreSQL
+                <NextJsIcon className="w-6 h-6" />
+                <ReactJsIcon className="w-6 h-6" />
+                <TailwindCssIcon className="w-6 h-6" />
+                <DatabaseIcon className="w-6 h-6" />
+                PostgreSQL
               </div>
             </CardContent>
             <CardFooter>
