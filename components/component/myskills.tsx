@@ -11,6 +11,8 @@ import FlaskIcon from "@/resource/flask.svg";
 import JSPIcon from "@/resource/jsp.svg";
 import LanguageIcon from "@/resource/lang.svg";
 import JavascriptIcon from "@/resource/js.svg";
+import VercelIcon from "@/resource/vercel.svg";
+import NetlifyIcon from "@/resource/netlify.svg";
 
 import JavaIcon from "@/resource/java.svg";
 import PythonIcon from "@/resource/python.svg";
@@ -119,6 +121,18 @@ const MySkills = () => {
               <GitHubIcon className="w-10 h-10" />
             </Link>
             <span className="text-sm font-medium">GitHub</span>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Link href={"https://github.com/davidlijar"}>
+              <VercelIcon className="w-10 h-10" />
+            </Link>
+            <span className="text-sm font-medium">Vercel</span>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Link href={"https://github.com/davidlijar"}>
+              <NetlifyIcon className="w-10 h-10" />
+            </Link>
+            <span className="text-sm font-medium">Netlify</span>
           </div>
         </div>
       </div>
