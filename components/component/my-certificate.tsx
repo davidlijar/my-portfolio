@@ -105,7 +105,7 @@ const MyCertificates = () => {
             <div className="flex items-center justify-between w-[350px]">
               <CardDescription>TOPIK</CardDescription>
 
-              <a href="/excel.jpg" target="_blank" rel="noopener noreferrer">
+              <a href="/topik.png" target="_blank" rel="noopener noreferrer">
                 <span className="text-sm pl-5 w-full underline">view</span>
               </a>
             </div>
