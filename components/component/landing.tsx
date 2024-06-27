@@ -96,7 +96,7 @@ export function Landing() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="z-20">
           <SubNav />
         </section>
         <section className="container mx-auto px-4 md:px-6 lg:px-8" id="skills">
@@ -171,7 +171,9 @@ export function Landing() {
                 <span className="text-sm font-medium">Git</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <GitHubIcon className="w-10 h-10" />
+                <Link href={'https://github.com/davidlijar'}>
+                  <GitHubIcon className="w-10 h-10" />
+                </Link>
                 <span className="text-sm font-medium">GitHub</span>
               </div>
             </div>

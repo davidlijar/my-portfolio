@@ -14,6 +14,7 @@ export const WriterEffect:React.FC<props>=({str})=> {
         strings: str,
         autoStart: true,
         loop: true,
+
       }}
     />
   );
